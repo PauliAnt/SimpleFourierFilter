@@ -52,7 +52,7 @@ Function uses first and last value with padding. Use zero padding if preferrable
 `plotting`: string (default "data")  
 Plotting mode. "data" plots original and filtered data. "frequency" plots normalised frequency spectrum and filtering conditions. "both" plots both in the same subplot. "none" disables plotting  
   
-## Advanced examples
+## Advanced examples ;)
 ### Trigonometric function with no padding
 ```python
 from simplefourierfilter import fourierFilter
