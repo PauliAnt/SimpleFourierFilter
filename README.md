@@ -22,7 +22,7 @@ X = f+e
 # Simple filter
 X_f = fourierFilter(X)
 ```
-![image](https://github.com/PauliAnt/SimpleFourierFilter/assets/63787410/06b6d8d5-c9ec-4ff2-bab2-e3d4ab1c0d3c)
+![image](https://github.com/PauliAnt/SimpleFourierFilter/assets/63787410/bec2df01-263e-4a2d-ac63-4a0e2e9d2076)
 
 ## Documentation :D
 ```python
@@ -68,7 +68,8 @@ X = f+e
 # Simple filter
 X_f = fourierFilter(X,ratio=0.4,method="threshold",plotting="both",nopadding=True)
 ```
-![image](https://github.com/PauliAnt/SimpleFourierFilter/assets/63787410/1104150f-5aa5-4248-a504-606de7fbd7ad)
+![image](https://github.com/PauliAnt/SimpleFourierFilter/assets/63787410/16a83d6a-5a98-4b3e-8d36-9da04f8b99ba)
+
 
 ### Smooth function featuring default padding and Cauchy distribution scaling
 ```python
@@ -84,5 +85,5 @@ X = f+e
 # Simple filter
 X_f = fourierFilter(X,ratio=0.05,method="dist",plotting="both")
 ```
-![image](https://github.com/PauliAnt/SimpleFourierFilter/assets/63787410/9991f4d3-8281-4ab5-a7c0-6faa41092353)
+![image](https://github.com/PauliAnt/SimpleFourierFilter/assets/63787410/9d5d856d-c515-4d78-aa43-36cc621b9828)
 
