@@ -26,7 +26,7 @@ X_f = fourierFilter(X)
 
 ## Documentation :D
 ```python
-fourierFilter(X,ratio,method,nopadding,zeropadding,plotting)
+X_f = fourierFilter(X,ratio,method,nopadding,zeropadding,plotting)
 ````
 
 ### Parameters
@@ -51,6 +51,10 @@ Function uses first and last value with padding. Use zero padding if preferrable
 
 `plotting`: string (default "data")  
 Plotting mode. "data" plots original and filtered data. "frequency" plots normalised frequency spectrum and filtering conditions. "both" plots both in the same subplot. "none" disables plotting  
+
+### Return value
+`X_f`: numpy array  
+Filtered time sequence
   
 ## Advanced examples ;)
 ### Trigonometric function with no padding
