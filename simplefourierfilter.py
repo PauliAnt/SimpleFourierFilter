@@ -2,7 +2,7 @@ import numpy as np
 from numpy import fft
 import matplotlib.pyplot as plt
 
-def fourierFilter(X,ratio=0.2,method="threshold",nopadding=False,zeropadding=False,plotting="data"):
+def fourierFilter(X,ratio=0.3,method="threshold",nopadding=False,zeropadding=False,plotting="data"):
     """
     Noise filter which utilises Fourier transform to remove unwanted frequency components
     :param X: numpy array
@@ -45,7 +45,7 @@ def fourierFilter(X,ratio=0.2,method="threshold",nopadding=False,zeropadding=Fal
     if method == "threshold":
         c = np.copy(c_orig)
         # Calculate threshold from standardized value
-        th = max(c)*(1-ratio)
+        th = max(np.abs(c))*(1-ratio)
         # zero all coefficient under chosen threshold
         for ii in range(0, len(c)):
             if np.abs(c[ii]) <= th:
@@ -85,7 +85,7 @@ def fourierFilter(X,ratio=0.2,method="threshold",nopadding=False,zeropadding=Fal
         X_f = X_f[N_padding:N_padding+N]
     
     # Plotting
-    if plotting == "default" or plotting == "both":
+    if plotting == "data" or plotting == "both":
         if plotting == "both":
             plt.subplot(211)
         else:
@@ -116,11 +116,11 @@ def fourierFilter(X,ratio=0.2,method="threshold",nopadding=False,zeropadding=Fal
             plt.legend(("Frequency spectrum","Cut-off frequency"))
             
         elif method == "dist":
-            n = len(cauchy)
-            plt.plot(omega_plot,cauchy[int(n/2):-1])
+            n_mid = round(len(cauchy)/2)
+            plt.plot(omega_plot,cauchy[n_mid:n_mid+len(omega_plot)])
             plt.legend(("Frequency spectrum","Scaling distribution"))
-        plt.show()
-        return X_f
+    plt.show()
+    return X_f
 
 
 def spectralDensity(X,Fs=1):
