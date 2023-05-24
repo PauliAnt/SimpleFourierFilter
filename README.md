@@ -24,7 +24,7 @@ X_f = fourierFilter(X)
 ```
 ![image](https://github.com/PauliAnt/SimpleFourierFilter/assets/63787410/06b6d8d5-c9ec-4ff2-bab2-e3d4ab1c0d3c)
 
-## Documentation ":D"
+## Documentation :D
 ```python
 fourierFilter(X,ratio,method,nopadding,zeropadding,plotting)
 ````
