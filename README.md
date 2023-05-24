@@ -7,7 +7,7 @@ All methods are based on my [Bachelor's thesis](https://urn.fi/URN:NBN:fi-fe2022
 pip install simplefourierfilter
 ```
 
-### So easy to use
+### So easy to use :)
 ```python
 from simplefourierfilter import fourierFilter
 import numpy as np
