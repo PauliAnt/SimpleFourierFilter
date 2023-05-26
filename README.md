@@ -35,7 +35,7 @@ Time sequence with equal spacing
 
 ### Optional parameters
 `ratio`: float (default 0.2)  
-Number between 0 and 1 defining how much stuff needs to go.  
+Number between 0 and 1 defining how much stuff you want to keep.  
   
 `method`: string (default "threshold")  
 Defining method used for noise reduction.  
