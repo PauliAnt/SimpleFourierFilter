@@ -30,7 +30,7 @@ X_f = fourierFilter(X,ratio,method,nopadding,zeropadding,plotting)
 ````
 
 ### Parameters
-`X` : numpy array  
+`X` : ndarray  
 Time sequence with equal spacing
 
 ### Optional parameters
